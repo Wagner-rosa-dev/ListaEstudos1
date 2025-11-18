@@ -68,6 +68,8 @@ int op_C(int &opcao){
             cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             continue;
             } else {
+
+                return opcao;
                 break;
             }
         }
@@ -170,7 +172,7 @@ int main() {
 
                 // Verificação de valor - Análisa se o valor é correto a pergunta
                 //função
-                //veriqt();
+                quantbeb = veriqt(quant);
 
                 if (bebida == 1) {total += 5 * quantbeb;}
                 if (bebida == 2) {total += 7 * quantbeb;}
@@ -219,7 +221,7 @@ int main() {
                 
                 // Verificação de valor - Análisa se o valor é correto a pergunta
                 //Função
-                //veriqt();
+                quantsob = veriqt(quant);
 
                 if (sobremesa == 1) {total += 5 * quantsob;}
                 if (sobremesa == 2) {total += 2 * quantsob;}
